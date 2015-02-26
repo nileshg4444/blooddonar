@@ -1,7 +1,7 @@
 var express = require ('express');
 var app= express();
 var mongojs = require('mongojs');
-var db= mongojs('admin:YZd534XXfzxR@mongodb://$OPENSHIFT_MONGODB_DB_HOST:$OPENSHIFT_MONGODB_DB_PORT/blooddonar',['contactlist']);
+var db= mongojs('admin:WeZ-Phst1vaH@mongodb://$OPENSHIFT_MONGODB_DB_HOST:$OPENSHIFT_MONGODB_DB_PORT/blooddonar',['contactlist']);
 var bodyParser = require('body-parser');
 
 app.use(express.static(__dirname +"/public/"));
